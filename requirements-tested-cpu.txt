@@ -1,0 +1,8 @@
+# CPU-only tested versions. Choose the matching PyTorch CPU wheel index.
+# This is NOT a CUDA environment lockfile.
+torch==2.10.0+cpu
+numpy==2.3.5
+PyYAML==6.0.3
+sympy==1.14.0
+jsonschema==4.26.0
+pytest==9.0.2

@@ -1,0 +1,9 @@
+# Equal-length block sampling => approximately these token proportions.
+# These are initial experimental settings, not empirically optimized proportions.
+sources:
+  - path: data/packed/fineweb_edu/train
+    weight: 0.45
+  - path: data/packed/cosmopedia/train
+    weight: 0.35
+  - path: data/packed/wikipedia_vi/train
+    weight: 0.20

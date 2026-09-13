@@ -1,0 +1,15 @@
+vocab_size: 264
+hidden_size: 64
+num_hidden_layers: 4
+intermediate_size: 128
+num_attention_heads: 4
+num_key_value_heads: 2
+layer_pattern: MMMA
+ssm_backend: reference
+state_size: 8
+ssm_expand: 2
+ssm_head_dim: 16
+conv_kernel: 4
+ssm_chunk_size: 32
+max_seq_len: 8192
+loss_chunk_size: 64

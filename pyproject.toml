@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scholartiny"
+version = "0.1.0"
+description = "MiniMind-inspired research kit: Mamba-2 + global GQA, academic tools and RAG"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["torch>=2.4,<3", "numpy>=1.26,<3", "PyYAML>=6,<7", "sympy>=1.12,<2", "jsonschema>=4,<5"]
+
+[project.optional-dependencies]
+data = ["datasets>=3,<5", "huggingface-hub>=0.27,<2", "tokenizers>=0.21,<1"]
+test = ["pytest>=8,<10"]
+# Install CUDA extensions separately after selecting a compatible CUDA/PyTorch stack.
+# Do NOT let editable-install dependency resolution change a working CUDA stack.
+
+[tool.setuptools.packages.find]
+include = ["model*", "dataset*", "trainer*", "scripts*", "agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["gpu: requires CUDA and official Mamba2", "optional: requires optional dependencies"]

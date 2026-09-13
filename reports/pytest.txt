@@ -1,0 +1,6 @@
+..............s..............ss..........                                [100%]
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_data.py:126: could not import 'tokenizers': No module named 'tokenizers'
+SKIPPED [1] tests/test_model.py:105: CUDA not available
+SKIPPED [1] tests/test_model.py:121: CUDA not available
+38 passed, 3 skipped in 10.45s

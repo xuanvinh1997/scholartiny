@@ -1,0 +1,67 @@
+[
+  {
+    "module": "dataset.collect",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "dataset.prepare",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "scripts.train_tokenizer",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "scripts.model_summary",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "scripts.generate_academic",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "scripts.build_rag_sft",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "scripts.build_rag_index",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "scripts.chat",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "scripts.evaluate",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "scripts.benchmark",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "scripts.smoke_test",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "trainer.train_pretrain",
+    "exit_code": 0,
+    "help_nonempty": true
+  },
+  {
+    "module": "trainer.train_full_sft",
+    "exit_code": 0,
+    "help_nonempty": true
+  }
+]

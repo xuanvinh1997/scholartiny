@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.work/
+data/
+out/
+wheelhouse/
+.env
+*.pt
+*.bin
+model/tokenizer.json
+model/tokenizer.json.meta.json
+reports/environment-local.txt

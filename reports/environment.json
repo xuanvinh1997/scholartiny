@@ -1,0 +1,17 @@
+{
+  "python": "3.13.5",
+  "packages": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5",
+    "PyYAML": "6.0.3",
+    "sympy": "1.14.0",
+    "jsonschema": "4.26.0",
+    "pytest": "9.0.2",
+    "tokenizers": null,
+    "datasets": null,
+    "huggingface-hub": "1.16.1",
+    "mamba-ssm": null,
+    "causal-conv1d": null
+  },
+  "cuda_available": false
+}

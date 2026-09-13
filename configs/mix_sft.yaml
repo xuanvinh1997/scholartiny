@@ -1,0 +1,12 @@
+# These are example-sampling proportions, not token proportions.
+sources:
+  - path: data/packed/openmath/train
+    weight: 0.35
+  - path: data/packed/xlam/train
+    weight: 0.20
+  - path: data/packed/academic_synthetic/train
+    weight: 0.25
+  - path: data/packed/ultrachat/train
+    weight: 0.10
+  - path: data/packed/rag_grounded/train
+    weight: 0.10

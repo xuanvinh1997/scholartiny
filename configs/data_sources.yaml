@@ -1,0 +1,72 @@
+# Curated source registry, verified against upstream dataset cards on 2026-09-10.
+# The card license is provenance, NOT a legal clearance for every embedded work.
+# All sources require --acknowledge-source-terms. xLAM additionally requires HF approval.
+# No eval split is collected. Local train/val/test are hash-partitioned by document/problem.
+sources:
+  fineweb_edu:
+    path: HuggingFaceTB/smollm-corpus
+    config: fineweb-edu-dedup
+    split: train
+    adapter: text
+    language: en
+    text_field: text
+    expected_card_licenses: [odc-by]
+    shuffle_buffer: 10000
+    min_chars: 200
+    max_chars: 150000
+    review_note: Dataset/database license does not blanket-license underlying web pages. Preserve URLs.
+  cosmopedia:
+    path: HuggingFaceTB/smollm-corpus
+    config: cosmopedia-v2
+    split: train
+    adapter: text
+    language: en
+    expected_card_licenses: [odc-by]
+    shuffle_buffer: 10000
+    min_chars: 200
+    max_chars: 100000
+    filters:
+      format: [textbook, textbook_unconditionned_topic]
+    review_note: Synthetic educational text; source prompts and synthetic factual errors require review.
+  wikipedia_vi:
+    path: wikimedia/wikipedia
+    config: 20231101.vi
+    split: train
+    adapter: text
+    language: vi
+    expected_card_licenses: [cc-by-sa-3.0, gfdl]
+    shuffle_buffer: 10000
+    min_chars: 200
+    max_chars: 150000
+    review_note: Historical fixed snapshot; preserve article attribution and applicable share-alike terms.
+  openmath:
+    path: nvidia/OpenMathInstruct-2
+    config: default
+    split: train_1M
+    adapter: openmath
+    language: en
+    expected_card_licenses: [cc-by-4.0]
+    shuffle_buffer: 10000
+    min_chars: 20
+    max_chars: 100000
+    review_note: Synthetic math solutions are not formal proofs. Augmented expected_answer uses majority vote.
+  xlam:
+    path: Salesforce/xlam-function-calling-60k
+    split: train
+    adapter: xlam
+    language: en
+    expected_card_licenses: [cc-by-4.0]
+    shuffle_buffer: 1000
+    min_chars: 20
+    max_chars: 50000
+    review_note: Gated access; accept terms and cite APIGen. Card also has research-purpose language; review full terms.
+  ultrachat:
+    path: HuggingFaceH4/ultrachat_200k
+    split: train_sft
+    adapter: messages
+    language: en
+    expected_card_licenses: [mit]
+    shuffle_buffer: 10000
+    min_chars: 50
+    max_chars: 100000
+    review_note: General instruction-following source; not a verified scientific reference.

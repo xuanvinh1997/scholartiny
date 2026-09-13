@@ -1,0 +1,4 @@
+[Gloo] Rank 1 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+[Gloo] Rank 0 is connected to 1 peer ranks. Expected number of connected peer ranks is : 1
+{"step": 1, "loss": 5.584345817565918, "lr": 0.0003, "grad_norm": 2.4959394931793213, "supervised_tokens": 124, "input_tokens": 128, "elapsed_seconds": 0.2562591219998467}
+{"step": 2, "loss": 5.548092842102051, "lr": 0.0003, "grad_norm": 2.714520215988159, "supervised_tokens": 248, "input_tokens": 256, "elapsed_seconds": 0.39496837299998333}
